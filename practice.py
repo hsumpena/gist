@@ -1,7 +1,13 @@
-a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
-y = " "
-print("Please, enter a number")
-num = int(input())
-for x in a:
-  if x < num : y += str(x) + " "
-print(y)
+import random
+a = random.sample(range(97,123),10)
+b = random.sample(range(97,123),15)
+aa=[]; bb=[]
+aaa=[]; bbb=[]; ccc=[]; ddd=[]
+for x in a: aa.append(chr(x))
+for y in b: bb.append(chr(y))
+print(aa)
+print(bb)
+print(list(set(aa) & set(bb)))
+print(list(set(aa) ^ set(bb)))
+print(list(set(aa) | set(bb)))
+print(list(set(aa) - set(bb)))
